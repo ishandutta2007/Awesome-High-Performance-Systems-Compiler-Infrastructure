@@ -1,34 +1,47 @@
-# Awesome High Performance Systems & Compiler Infrastructure [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome High Performance Systems &amp; Compiler Infrastructure Banner" width="100%" />
+</p>
+
+# ⚡ Awesome High Performance Systems & Compiler Infrastructure
+
+<p align="left">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 A comprehensive, curated directory of high-performance compiler frameworks, intermediate representation (IR) toolchains, AI accelerator backends, heterogeneous GPU computing runtimes, and interactive compilation sandboxes. Features commercial SaaS / cloud platforms alongside battle-tested open-source ecosystems.
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Cloud-Hosted Platforms](#saas--cloud-hosted-platforms)
-- [Open-Source Equivalents & Toolchains](#open-source-equivalents--toolchains)
-  - [Core Compiler Toolchains & Backends](#core-compiler-toolchains--backends)
-  - [MLIR, Tensor & AI Accelerator Compilers](#mlir-tensor--ai-accelerator-compilers)
-  - [GPU, Heterogeneous & HPC Parallel Compilers](#gpu-heterogeneous--hpc-parallel-compilers)
-  - [Self-Hosted Compiler Explorers & Execution Sandboxes](#self-hosted-compiler-explorers--execution-sandboxes)
-  - [High-Performance Systems Languages & Build Infrastructure](#high-performance-systems-languages--build-infrastructure)
-- [Contributing](#contributing)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Cloud-Hosted Platforms](#️-saas--cloud-hosted-platforms)
+- [🛠️ Open-Source Equivalents & Toolchains](#️-open-source-equivalents--toolchains)
+  - [⚙️ Core Compiler Toolchains & Backends](#️-core-compiler-toolchains--backends)
+  - [🧬 MLIR, Tensor & AI Accelerator Compilers](#-mlir-tensor--ai-accelerator-compilers)
+  - [🔥 GPU, Heterogeneous & HPC Parallel Compilers](#-gpu-heterogeneous--hpc-parallel-compilers)
+  - [🧪 Self-Hosted Compiler Explorers & Execution Sandboxes](#-self-hosted-compiler-explorers--execution-sandboxes)
+  - [🚀 High-Performance Systems Languages & Build Infrastructure](#-high-performance-systems-languages--build-infrastructure)
+- [⭐ Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
+- [🤝 Contributing](#-contributing)
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The high-performance systems and compiler infrastructure market represents an estimated **$17B–$22B+** sector (surging toward **$200B+ by 2035** driven by AI acceleration and specialized silicon), characterized by a **highly concentrated, winner-take-all dynamic** at the hardware-firmware layer (dominated by NVIDIA's proprietary CUDA/NVCC ecosystem) alongside an **open-standard consensus layer** coalescing around LLVM, MLIR, and Triton where hyperscalers, chipmakers, and independent startups co-develop portable domain-specific compiler backends.
 
 ---
 
-## SaaS & Cloud-Hosted Platforms
+## ☁️ SaaS & Cloud-Hosted Platforms
 
 Below are leading commercial cloud compiler platforms, managed accelerator runtimes, interactive code evaluation engines, and automated processor compiler generation suites, sorted in descending order by company valuation / market capitalization.
 
-| Platform | Description | Starting Pricing Tier | Free Tier Limits / Evaluation | Company Valuation / Revenue |
+| 🏢 Platform | 📝 Description | 💰 Starting Pricing Tier | 🎁 Free Tier Limits / Evaluation | 📈 Company Valuation / Revenue |
 | :--- | :--- | :--- | :--- | :--- |
 | **[NVIDIA CUDA Toolkit & NGC Cloud](https://nvidia.com)** | Enterprise GPU compute stack, NVCC compiler suite, and cloud container registry for accelerated computing. | **$1.00/GPU-hour** on cloud marketplaces; **$4,500/GPU/year** for NVIDIA AI Enterprise license. | **Free forever** for standard developer CUDA toolkit; **90-day free trial** for NVIDIA AI Enterprise with full microservice access. | **~$3.5 Trillion** Market Cap (NVIDIA Corp.) |
 | **[Intel Tiber Developer Cloud](https://cloud.intel.com)** | Cloud-hosted development cluster for Intel oneAPI compilers (ICX, IFX), SYCL, Xeon CPUs, and Gaudi AI accelerators. | **$0.00/hour** base tier; paid instances start on pay-as-you-go hourly rates upon portal registration. | **Free forever (Standard Tier)**: Complimentary access to Jupyter notebooks with AI toolchains and shared Intel Xeon evaluation instances. | **~$105 Billion** Market Cap (Intel Corp.) |
@@ -41,11 +54,11 @@ Below are leading commercial cloud compiler platforms, managed accelerator runti
 
 ---
 
-## Open-Source Equivalents & Toolchains
+## 🛠️ Open-Source Equivalents & Toolchains
 
 The foundational open-source compilers, intermediate representation dialects, kernel synthesis systems, and distributed HPC frameworks powering modern computing. Repositories are sorted in descending order by GitHub stargazer count within each category.
 
-### Core Compiler Toolchains & Backends
+### ⚙️ Core Compiler Toolchains & Backends
 
 * **[LLVM Project](https://github.com/llvm/llvm-project)** [![GitHub stars](https://img.shields.io/github/stars/llvm/llvm-project?style=social&color=white)](https://github.com/llvm/llvm-project/stargazers) - Modular and reusable compiler backend technologies, code optimizers, Clang frontend, and code generators powering modern programming languages.
 * **[Mold](https://github.com/rui314/mold)** [![GitHub stars](https://img.shields.io/github/stars/rui314/mold?style=social&color=white)](https://github.com/rui314/mold/stargazers) - Ultra-fast, modern drop-in replacement linker designed to maximize multicore CPU utilization and drastically speed up compilation loops.
@@ -54,7 +67,7 @@ The foundational open-source compilers, intermediate representation dialects, ke
 * **[CIRCT](https://github.com/llvm/circt)** [![GitHub stars](https://img.shields.io/github/stars/llvm/circt?style=social&color=white)](https://github.com/llvm/circt/stargazers) - Circuit IR Compilers and Tools applying MLIR and LLVM compiler infrastructure methodology to hardware description and Electronic Design Automation (EDA).
 * **[QBE Compiler Backend](https://c9x.me/compile/)** - Minimalist, pure-C compiler backend designed to deliver 70% of LLVM's optimization performance in 10% of the code size.
 
-### MLIR, Tensor & AI Accelerator Compilers
+### 🧬 MLIR, Tensor & AI Accelerator Compilers
 
 * **[JAX](https://github.com/google/jax)** [![GitHub stars](https://img.shields.io/github/stars/google/jax?style=social&color=white)](https://github.com/google/jax/stargazers) - Composable transformations of Python+NumPy programs with automatic differentiation and compilation via OpenXLA.
 * **[tinygrad](https://github.com/tinygrad/tinygrad)** [![GitHub stars](https://img.shields.io/github/stars/tinygrad/tinygrad?style=social&color=white)](https://github.com/tinygrad/tinygrad/stargazers) - Deep learning framework and optimizing kernel compiler that prioritizes minimalism and hardware execution speed.
@@ -64,7 +77,7 @@ The foundational open-source compilers, intermediate representation dialects, ke
 * **[OpenXLA / XLA](https://github.com/openxla/xla)** [![GitHub stars](https://img.shields.io/github/stars/openxla/xla?style=social&color=white)](https://github.com/openxla/xla/stargazers) - Domain-specific optimizing compiler for linear algebra, accelerating PyTorch, JAX, and TensorFlow across diverse accelerator chips.
 * **[IREE](https://github.com/iree-org/iree)** [![GitHub stars](https://img.shields.io/github/stars/iree-org/iree?style=social&color=white)](https://github.com/iree-org/iree/stargazers) - Retargetable MLIR-based compiler and low-overhead runtime executing models across Vulkan, Metal, CUDA, and CPU microarchitectures.
 
-### GPU, Heterogeneous & HPC Parallel Compilers
+### 🔥 GPU, Heterogeneous & HPC Parallel Compilers
 
 * **[Taichi Lang](https://github.com/taichi-dev/taichi)** [![GitHub stars](https://img.shields.io/github/stars/taichi-dev/taichi?style=social&color=white)](https://github.com/taichi-dev/taichi/stargazers) - High-performance parallel programming language embedded in Python that compiles spatial computing and physics kernels to CUDA, Metal, and Vulkan.
 * **[AMD ROCm](https://github.com/ROCm/ROCm)** [![GitHub stars](https://img.shields.io/github/stars/ROCm/ROCm?style=social&color=white)](https://github.com/ROCm/ROCm/stargazers) - Open-source software development platform and compiler stack (amdclang++) for GPU-accelerated computing and machine learning.
@@ -74,14 +87,14 @@ The foundational open-source compilers, intermediate representation dialects, ke
 * **[Enzyme](https://github.com/EnzymeAD/Enzyme)** [![GitHub stars](https://img.shields.io/github/stars/EnzymeAD/Enzyme?style=social&color=white)](https://github.com/EnzymeAD/Enzyme/stargazers) - High-performance LLVM compiler plugin performing automatic differentiation directly on LLVM IR for scientific computing and machine learning.
 * **[Celerity Runtime](https://github.com/celerity/celerity-runtime)** [![GitHub stars](https://img.shields.io/github/stars/celerity/celerity-runtime?style=social&color=white)](https://github.com/celerity/celerity-runtime/stargazers) - Asynchronous C++ runtime bringing SYCL's single-source programming model to heterogeneous distributed GPU clusters.
 
-### Self-Hosted Compiler Explorers & Execution Sandboxes
+### 🧪 Self-Hosted Compiler Explorers & Execution Sandboxes
 
 * **[Compiler Explorer (godbolt)](https://github.com/compiler-explorer/compiler-explorer)** [![GitHub stars](https://img.shields.io/github/stars/compiler-explorer/compiler-explorer?style=social&color=white)](https://github.com/compiler-explorer/compiler-explorer/stargazers) - Interactive web-based compilation investigation tool showing assembly and IR output across thousands of toolchains.
 * **[Judge0](https://github.com/judge0/judge0)** [![GitHub stars](https://img.shields.io/github/stars/judge0/judge0?style=social&color=white)](https://github.com/judge0/judge0/stargazers) - Robust, scalable, multi-language sandboxed code execution engine supporting 60+ compilers and languages via REST API.
 * **[Piston](https://github.com/engineer-man/piston)** [![GitHub stars](https://img.shields.io/github/stars/engineer-man/piston?style=social&color=white)](https://github.com/engineer-man/piston/stargazers) - High-performance general-purpose code execution and compilation engine running untrusted code in secure Docker containers.
 * **[Rust Playground Engine](https://github.com/integer32llc/rust-playground)** [![GitHub stars](https://img.shields.io/github/stars/integer32llc/rust-playground?style=social&color=white)](https://github.com/integer32llc/rust-playground/stargazers) - Backend containerized compilation and execution engine powering play.rust-lang.org.
 
-### High-Performance Systems Languages & Build Infrastructure
+### 🚀 High-Performance Systems Languages & Build Infrastructure
 
 * **[llama.cpp](https://github.com/ggml-org/llama.cpp)** [![GitHub stars](https://img.shields.io/github/stars/ggml-org/llama.cpp?style=social&color=white)](https://github.com/ggml-org/llama.cpp/stargazers) - Pure C/C++ tensor library and quantization compiler backend providing zero-dependency high-throughput LLM inference across CPU, CUDA, Metal, and Vulkan.
 * **[Rust (rustc)](https://github.com/rust-lang/rust)** [![GitHub stars](https://img.shields.io/github/stars/rust-lang/rust?style=social&color=white)](https://github.com/rust-lang/rust/stargazers) - Empowering systems language with fine-grained control, memory safety without garbage collection, and an advanced LLVM/Cranelift compiler pipeline.
@@ -94,7 +107,25 @@ The foundational open-source compilers, intermediate representation dialects, ke
 
 ---
 
-## Contributing
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-High-Performance-Systems-Compiler-Infrastructure&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-High-Performance-Systems-Compiler-Infrastructure&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+Thank you so much for exploring and supporting this curated high-performance compiler infrastructure repository! 🌟
+
+If you found this resource helpful for your research, systems development, or compiler engineering projects:
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork it** to maintain your own references or propose additions.
+- 📢 **Share it** with friends, colleagues, and compiler enthusiasts on Twitter/X, LinkedIn, Reddit, or Discord.
+- ☕ **Support the maintainer**: If you'd like to fuel further open-source compiler infrastructure curation, feel free to sponsor or buy a coffee via the [Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 🤝 Contributing
 
 Contributions are welcome! Please follow these guidelines:
 
